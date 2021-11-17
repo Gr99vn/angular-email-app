@@ -1,0 +1,10 @@
+<ng-container *ngFor="let folderId of folderIds">
+  <div class="folder {{folderId}}" routerLinkActive="bg-primary text-light">
+    <a [routerLink]="['/messages', folderId]" routerLinkActive="text-light">
+      <i class="far" 
+      [class.fa-folder-open]="activeFolderId === folderId" 
+      [class.fa-folder]="activeFolderId !== folderId">
+      </i>{{folderId}}
+    </a>
+  </div>
+</ng-container>

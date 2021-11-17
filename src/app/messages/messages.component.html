@@ -1,0 +1,14 @@
+<div class="messages-component">
+  <app-email-box [folderIds]="folderIds" [activeFolderId]="activeFolder?._id">
+  </app-email-box>
+  <app-email-preview
+    [columns]="activeFolder?.columns"
+    [activeFolderId]="activeFolder?._id"
+    [messages]="activeFolderMessages"
+    (handleReadMessage)="readMessage($event)"
+  >
+  </app-email-preview>
+</div>
+<ng-container *ngIf="selectedMessage">
+  <app-email-detail [message]="selectedMessage"></app-email-detail>
+</ng-container>

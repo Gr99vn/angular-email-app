@@ -1,0 +1,11 @@
+$headerBackground: darkgray;
+$headerTextColor: #333;
+
+.message .header, .body {
+  padding: 1em 2em;
+}
+
+.header {
+  background-color: $headerBackground;
+  color: $headerTextColor;
+}

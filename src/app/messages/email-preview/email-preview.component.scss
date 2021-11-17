@@ -1,0 +1,38 @@
+table,
+thead {
+  width: 100%;
+  font-size: small;
+}
+
+thead {
+  font-weight: bold;
+}
+
+.message-table {
+  table-layout: fixed;
+
+  & td {
+    padding: 0.25em 0.75em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: small;
+    cursor: default;
+
+    &:nth-child(1) {
+      width: 1.75em;
+    }
+
+    &:nth-child(2) {
+      width: 21%;
+    }
+
+    &:nth-child(3) {
+      width: 62%;
+    }
+
+    &:nth-child(4) {
+      width: 15%;
+    }
+  }
+}

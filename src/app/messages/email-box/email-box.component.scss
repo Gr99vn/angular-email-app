@@ -1,0 +1,15 @@
+$anchorColor: black;
+
+.folder {
+  & a {
+    display: block;
+    color: $anchorColor;
+    padding: 0.15em 1.5em;
+    text-decoration: none;
+    font-size: small;
+    cursor: pointer;
+  }
+  & i.far {
+    width: 1.35em;
+  }
+}

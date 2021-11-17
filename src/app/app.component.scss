@@ -1,0 +1,33 @@
+$borderGray: #ddd;
+[role=button] {
+  cursor: pointer;
+}
+
+a {
+  color: #337ab7 !important;
+  text-decoration: none;
+}
+
+.nav .nav-c li {
+  & a {
+    display: block;
+    position: relative;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 10px 10px 0 0;
+    border-width: 1px;
+    margin-bottom: -1px;
+    
+    &:hover {
+      background-color:  $borderGray;
+    }
+  }
+
+  &.active a {
+    border: 1px solid $borderGray;
+    border-bottom: 1px solid transparent;
+    margin-bottom: -1px;
+    // border-color: lightgray lightgray rgba(0,0,0,0) lightgray;
+    background-color: #f7f7f7;
+  }
+}

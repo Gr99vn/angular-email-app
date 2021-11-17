@@ -1,0 +1,18 @@
+.messages-component {
+  width: 100%;
+  display: flex;
+  max-height: 200px;
+}
+app-email-box {
+  min-width: 9em;
+  overflow-y: scroll;
+  max-height: 200px;
+  background-color: #ddd;
+  padding: 1em 0;
+}
+app-email-preview {
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 200px;
+  user-select: none;
+}
