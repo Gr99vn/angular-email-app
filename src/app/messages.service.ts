@@ -28,10 +28,12 @@ export class MessagesService {
   messages: IMessage[] = [];
 
   constructor() {
-    this.messages = JSON.parse(localStorage.getItem('MESSAGES')!);
-    if (!this.messages) {
+    console.log("init");
+    
+    if (this.messages.length == 0) {
       localStorage.setItem('MESSAGES', JSON.stringify(MESSAGES));
     }
+    this.messages = JSON.parse(localStorage.getItem('MESSAGES')!);
   }
 
   getMessageByFolder(folder: string): Observable<IMessage[]> {
